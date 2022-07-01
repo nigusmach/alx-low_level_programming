@@ -1,7 +1,3 @@
-/**
- * File: 0-positive_or_negative.c
- *i Auth: Brennan D Baraban
- */
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
