@@ -1,6 +1,6 @@
 /*
  * File: 8-print_base16.c
- * Auth: Nigus Machin 
+ * Auth:Nigus Machin
  */
 #include <stdio.h>
 /**
