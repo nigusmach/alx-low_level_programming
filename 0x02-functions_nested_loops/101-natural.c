@@ -8,15 +8,15 @@ void print_sum(void)
 {
 	int n=1024;
 	int sum=0;
+	int i;
 	   
-	while(n!=0)
+	for(i=1;i<n;i++)while(n!=0)
 	{
-		if(n%3==0||n%5==0)
+		if(i%3==0||i%5==0)
 		{
-			sum+=n;
+			sum+=i;
 			printf("%d, ", sum);
+			printf("\n");
 		}
-	printf("\n");
-	n--;
 	}
 }
