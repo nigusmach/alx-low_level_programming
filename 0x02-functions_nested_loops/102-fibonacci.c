@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int n = 50;
-	long long int sum = 0;
+	long long sum = 0;
 	int i;
 	int a= 0;
 	int b= 1;
