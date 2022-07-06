@@ -23,7 +23,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%"PRIu64"\n", sum);
+		printf("%"PRIu64", ", sum);
 	}
 	return (0);
 }
