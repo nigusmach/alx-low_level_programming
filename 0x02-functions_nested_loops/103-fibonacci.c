@@ -14,7 +14,7 @@ int main(void)
 	int b= 1;
 	int feb;
 
-	for (i = 1; i <= n; i++)
+	while(feb<=n)
 	{
 		feb=a+b;
 		a = b;
@@ -25,6 +25,7 @@ int main(void)
 			printf("%d", sum);
 			printf("\n");
 		}
+		
 	}
 	return (0);
 }
