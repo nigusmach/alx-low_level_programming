@@ -25,7 +25,7 @@ int main(void)
 		b = sum;
 		if (i == n)
 		{
-			printf("%"PRIu64"\n ", sum);
+			printf("%"PRIu64"\n", sum);
 			break;
 		}
 		printf("%"PRIu64", ", sum);
