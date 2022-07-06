@@ -23,7 +23,7 @@ int main(void)
 		{
 			sum += feb;
 			printf("%d", sum);
-			prinf("\n");
+			printf("\n");
 		}
 	}
 	return (0);
