@@ -1,11 +1,10 @@
-/**
- * main - Entry point
- * Return: Always 0 (Success)
- */
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - returns sum of multiple 3and 5 numbers less than 1024
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n = 1024;
