@@ -1,10 +1,11 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * main - Entry point
  * Return: Always 0 (Success)
  */
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 int main(void)
 {
 	int n = 1024;
