@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * prints -sum of multiple 3and 5 numbers less than 1024
- * Return: the sum
+ * main -prints multiple 3 and 5 numbers less than 1024
+ * Return: always 0 (success)
  */
 int main(void)
 {
