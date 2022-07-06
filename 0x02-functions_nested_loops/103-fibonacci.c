@@ -15,6 +15,7 @@ int main(void)
 	int feb;
 
 	for (i = 1; i <= n; i++)
+	{
 		feb=a+b;
 		a = b;
 		b = feb;
@@ -24,5 +25,6 @@ int main(void)
 			printf("%llu, ", sum);
 			prinf("\n");
 		}
+	}
 	return (0);
 }
