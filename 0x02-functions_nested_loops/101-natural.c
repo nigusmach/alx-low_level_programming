@@ -26,5 +26,3 @@ void print_sum(void)
 		}
 	}
 }
-	return 0;
-}
