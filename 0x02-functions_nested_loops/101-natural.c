@@ -7,14 +7,6 @@
  */
 int main(void)
 {
-	return (0);
-}
-/**
- * prints the sum of all the multiples of 3 or 5 below 1024 (excluded), followed by a new line.
- * Return: returns sum
- */
-void print_sum(void)
-{
 	int n=1024;
 	int sum=0;
 	int i;
@@ -28,4 +20,5 @@ void print_sum(void)
 			printf("\n");
 		}
 	}
+	return sum;
 }
