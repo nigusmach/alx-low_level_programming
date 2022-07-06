@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int n = 50;
-	long long int sum = 0;
+	int sum = 0;
 	int i;
 	int a= 0;
 	int b= 1;
@@ -21,7 +21,7 @@ int main(void)
 		sum = a + b;
 		a=b;
 		b=sum;
-		printf("%llu, ", sum);
+		printf("%d, ", sum);
 	}
 	return (0);
 }
