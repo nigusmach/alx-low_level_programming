@@ -6,6 +6,10 @@
  */
 int main(void)
 {
+	printf("Hello world!\n");
+        return 0;
+}
+
 void print_sum(void)
 {
 	int n=1024;
