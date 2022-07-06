@@ -18,7 +18,7 @@ int main(void)
 		feb = a + b;
 		a = b;
 		b = feb;
-		if (feb %2 == 0)
+		if (feb % 2 == 0)
 		{
 			sum += feb;
 		}
