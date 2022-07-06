@@ -12,11 +12,11 @@ int main(void)
 
 {
 
-	int n = 50;
+	uint64_t n = 50;
 	uint64_t sum = 0;
-	int i;
-	int a = 0;
-	int b = 1;
+	uint64_t i;
+	uint64_t a = 0;
+	uint64_t b = 1;
 
 	for (i = 1; i <= n; i++)
 	{
