@@ -24,7 +24,10 @@ int main(void)
 		a = b;
 		b = sum;
 		if (i == n)
-		printf("%"PRIu64"\n ", sum);
+		{
+			printf("%"PRIu64"\n ", sum);
+			break;
+		}
 		printf("%"PRIu64", ", sum);
 	}
 	return (0);
