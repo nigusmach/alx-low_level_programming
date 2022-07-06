@@ -9,7 +9,6 @@ int main(void)
 {
 	return (0);
 }
-
 /**
  * prints -sum of multiple 3and 5 numbers less than 1024
  * Return: the sum
