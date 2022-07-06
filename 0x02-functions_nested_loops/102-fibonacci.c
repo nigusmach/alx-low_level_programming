@@ -11,7 +11,7 @@ int main(void)
 {
 
 	int n = 50;
-	int sum = 0;
+	unsigned int sum = 0;
 	int i;
 	int a= 0;
 	int b= 1;
