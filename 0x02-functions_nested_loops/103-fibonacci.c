@@ -21,10 +21,11 @@ int main(void)
 		if (feb%2 == 0)
 		{
 			sum += feb;
-			printf("%d", sum);
-			printf("\n");
+					
 		}
 		
 	}
+	printf("%d", sum);
+	printf("\n");
 	return (0);
 }
