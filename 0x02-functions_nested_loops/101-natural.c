@@ -2,10 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - returns sum of multiple 3and 5 numbers less than 1024
+ * main - Entry point
  * Return: Always 0 (Success)
  */
 int main(void)
+{
+	return (0);
+}
+
+/**
+ * prints -sum of multiple 3and 5 numbers less than 1024
+ * Return: the sum
+ */
+void prin_sum(void)
 {
 	int n = 1024;
 	int sum = 0;
@@ -18,5 +27,4 @@ int main(void)
 	}
 	printf("%d", sum);
 	printf("\n");
-	return (0);
 }
