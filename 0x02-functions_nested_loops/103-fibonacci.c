@@ -22,7 +22,7 @@ int main(void)
 		if (feb%2 == 0)
 		{
 			sum += feb;
-			printf("%llu, ", sum);
+			printf("%d", sum);
 			prinf("\n");
 		}
 	}
