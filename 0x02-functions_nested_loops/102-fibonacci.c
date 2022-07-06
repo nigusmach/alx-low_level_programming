@@ -16,7 +16,7 @@ int main(void)
 	int a= 0;
 	int b= 1;
 	
-	for (i = 3; i < n; i++)
+	for (i = 1; i < n; i++)
 	{
 		sum = a + b;
 		a=b;
