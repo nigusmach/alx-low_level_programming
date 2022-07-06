@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n = 98;
-	int sum = 0;
+	long sum = 0;
 	int i;
 	int a = 0;
 	int b = 1;
@@ -18,7 +18,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		printf("%d, ", sum);
+		printf("%ld, ", sum);
 	}
 	return (0);
 }
