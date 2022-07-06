@@ -9,7 +9,6 @@ int main(void)
 {
 	int n = 4000000;
 	int sum = 0;
-	int i;
 	int a= 0;
 	int b= 1;
 	int feb;
