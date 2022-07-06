@@ -9,13 +9,13 @@ int main(void)
 {
 	int n = 4000000;
 	int sum = 0;
-	int a= 0;
-	int b= 1;
+	int a = 0;
+	int b = 1;
 	int feb;
 
-	while(feb<=n)
+	while(feb <= n)
 	{
-		feb=a+b;
+		feb = a+b;
 		a = b;
 		b = feb;
 		if (feb%2 == 0)
