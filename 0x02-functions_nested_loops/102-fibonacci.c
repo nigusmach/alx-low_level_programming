@@ -25,5 +25,6 @@ int main(void)
 		b = sum;
 		printf("%"PRIu64", ", sum);
 	}
+	printf("\n");
 	return (0);
 }
