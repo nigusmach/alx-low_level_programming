@@ -13,17 +13,15 @@ int main(void)
 	int b = 1;
 	int feb;
 
-	while(feb <= n)
+	while (feb <= n)
 	{
-		feb = a+b;
+		feb = a + b;
 		a = b;
 		b = feb;
-		if (feb%2 == 0)
+		if (feb %2 == 0)
 		{
 			sum += feb;
-					
 		}
-		
 	}
 	printf("%d", sum);
 	printf("\n");
