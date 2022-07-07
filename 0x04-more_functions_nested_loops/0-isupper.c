@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "main.h";
 #include <stdio.h>
 /**
@@ -12,3 +13,19 @@
 		   else
 			    return 0;
 		    }
+=======
+#include "main.h";
+#include <stdio.h>
+/**
+ * is_uper -  checks for weather upper letter or not
+ * @c: third int
+ * Return: 1 if upper else 0
+ */
+ int _isupper(int c)
+ {
+ if (c >= 65 & c <=90)
+ return 1;
+ else
+ return 0;
+ }
+>>>>>>> 9e5fcbf1376a3567db7f278172aa83bf20b81465
