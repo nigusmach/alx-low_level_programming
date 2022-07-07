@@ -1,24 +1,34 @@
-#include "main.h"
+/*
+ * File: 103-fibonacci.c
+ * Auth: Nigus Machin
+ */
+
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main -prints multiple 3 and 5 numbers less than 1024
- * Return: always 0 (success)
+ * main - Prints the sum of even-valued Fibonacci sequence
+ *        terms not exceeding 4000000.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n = 98;
-	long sum = 0;
-	int i;
-	int a = 0;
-	int b = 1;
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-	for (i = 1; i <= n; i++)
+	while (1)
 	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		printf("%ld, ", sum);
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
+
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
+
+		fib1 = fib2;
+		fib2 = fibsum;
 	}
+	printf("%.0f\n", tot_sum);
+
 	return (0);
 }
