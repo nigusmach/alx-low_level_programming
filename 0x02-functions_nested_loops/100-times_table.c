@@ -2,9 +2,7 @@
  * File: 100-times_table.c
  * Auth: Nigus Machin
  */
-
 #include "main.h"
-
 /**
  * times_table - Prints the times table of the input,
  *                     starting with 0.
