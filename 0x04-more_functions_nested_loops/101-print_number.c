@@ -1,53 +1,15 @@
-#include <stdio.h>
-
-#include <math.h>
-
+#include "main.h"
 /**
- *
- *  * main -  program that finds and prints the largest prime factor of a number
- *
- *   * Return: Always 0.
- *
- *    */
-
-
-
-int main(void)
-
+ * print_numbers - print number.
+ * Return: 0
+ */
+void print_number(int n)
 {
-
-		long int num = 612852475143;
-
-			int prime;
-
-
-
-				for (prime = 2; prime <= sqrt(num); prime++)
-
-						{
-
-									/*int saved_prime;*/
-
-
-
-									if (num % prime == 0)
-
-												{
-
-																/*saved_prime = prime;*/
-
-																num = num / prime;
-
-																			prime = 1;
-
-																					/* printf("%ld\n", num);*/
-
-																					}
-
-										}
-
-					printf("%ld\n", num);
-
-					return (0);
-
+	if (n > 9)
+	{
+		_putchar(n / 10 + '0');
+			_putchar(n% 10 + '0');
+			
+	}
+_putchar('\n');
 }
