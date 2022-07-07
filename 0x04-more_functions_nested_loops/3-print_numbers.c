@@ -1,29 +1,19 @@
+/*
+ * File: 3-print_numbers.c
+ * Auth: Nigus Machin
+ */
+
+#include "main.h"
+
 /**
- *
- *  * print_numbers - function that checks for uppercase character.
- *
- *   * Return: 0
- *
- *    */
-
+ * print_numbers - Prints the numbers from 0-9.
+ */
 void print_numbers(void)
-
 {
+	int num;
 
-		char c = '0';
+	for (num = 0; num <= 9; num++)
+		_putchar((num % 10) + '0');
 
-
-
-			while (c <= '9')
-
-					{
-
-								_putchar(c);
-
-										c++;
-
-											}
-
-			_putchar('\n');
-
+	_putchar('\n');
 }
