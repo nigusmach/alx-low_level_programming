@@ -1,24 +1,18 @@
 /*
- * File: 4-print_rev.c
+ * File: 3-puts.c
  * Auth: Nigus Machin
  */
 
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string to be printed.
+ * _puts - Prints a string to stdout.
+ * @str: The string to be printed.
  */
-void print_rev(char *s)
+void _puts(char *str)
 {
-	int len = 0, index;
-
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
+	while (*str)
+		_putchar(*str++);
 
 	_putchar('\n');
 }
-
