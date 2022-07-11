@@ -4,7 +4,6 @@
  * @str: declaration of str and paramters for the function puts2
  * Return: Always 0.
  */
-
 void puts2(char *str)
 {
 	int c;
