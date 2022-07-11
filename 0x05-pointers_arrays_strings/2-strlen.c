@@ -1,33 +1,15 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- *
- *  * _strlen - check the code for Holberton School students.
- *
- *   * @s: declaration of *s and paramters for the function _strlen
- *
- *    * Return: Always 0.
- *
- *     */
-
+ * _strlen -  function that returns the length of a string.
+ *  @s: declaration of *s and paramters for the function _strlen
+ * Return: Always 0.
+ */
 int _strlen(char *s)
-
 {
+	int c;
 
-		int c;
-
-
-
-			for (c = 0; s[c] != 0; c++)
-
-					{
-
-							}
-
-				return (c);
-
+	for (c = 0; s[c] != 0; c++)
+	{
+	}
+	return (c);
 }
-
-Footer
-
-© 2022 GitHub, Inc.
