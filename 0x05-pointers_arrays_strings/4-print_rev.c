@@ -1,13 +1,8 @@
-/*
- * File: 4-print_rev.c
- * Auth: Nigus Machin
- */
-
 #include "main.h"
-
 /**
- * print_rev - to  prints a string, in reverse, .
- * @str: The string to be printed.
+ * print_rev - func that prints a string, in reverse, followed by a new line
+ * @s: declaration of s and paramters for the function
+ * Return: Always 0.
  */
 void print_rev(char *s)
 {
