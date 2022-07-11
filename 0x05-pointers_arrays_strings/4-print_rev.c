@@ -1,12 +1,12 @@
 /*
- * File: 3-puts.c
+ * File: 4-print_rev.c
  * Auth: Nigus Machin
  */
 
 #include "main.h"
 
 /**
- * _puts - Prints a string to stdout.
+ * print_rev - to  prints a string, in reverse, .
  * @str: The string to be printed.
  */
 void print_rev(char *s)
