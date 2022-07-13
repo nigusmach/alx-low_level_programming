@@ -10,15 +10,15 @@
  */
 int main(void)
 {
-	int digit1, digit2;
+	int d1, d2;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (d1 = 0; d1 < 9; d1++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		for (d2 = d1 + 1; d2 < 10; d2++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-		if (digit1 == 8 && digit2 == 9)
+			putchar((d1 % 10) + '0');
+			putchar((d2 % 10) + '0');
+		if (d1 == 8 && d2 == 9)
 			continue;
 		putchar(',');
 		putchar(' ');
