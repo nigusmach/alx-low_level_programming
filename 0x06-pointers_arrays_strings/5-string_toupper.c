@@ -1,35 +1,22 @@
-#include "holberton.h"
-
-
-
+#include "main.h"
 /**
+ * string_toupper - Changes all lowercase letters
+ *                  of a string to uppercase.
+ * @str: The string to be changed.
  *
- *  * reverse_array - Reverses the content of an array of integers.
- *
- *   * @a: The array of integers to be reversed.
- *
- *    * @n: The number of elements in the array.
- *
- *     */
-
-void reverse_array(int *a, int n)
-
+ * Return: A pointer to the changed string.
+ */
+char *string_toupper(char *str)
 {
+	int index = 0;
 
-		int tmp, index;
+	while (str[index])
+	{
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
 
+		index++;
+	}
 
-
-			for (index = n - 1; index >= n / 2; index--)
-
-					{
-
-								tmp = a[n - 1 - index];
-
-										a[n - 1 - index] = a[index];
-
-												a[index] = tmp;
-
-													}
-
+	return (str);
 }
