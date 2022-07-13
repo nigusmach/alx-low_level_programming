@@ -1,9 +1,17 @@
-#include "main.h"
+/*
+ * File: 1-strncat.c
+ * Auth: Nigus Machin
+ */
+
+#include "holberton.h"
+
 /**
- * *_strncat -  function that concatenates two strings.
- * @src: parameter to a src
- * @dest: parameter to append
- * Return: Always 0.
+ * _strncat - Concatenates two strings using at most
+ *            an inputted number of bytes from src.
+ * @dest: The string to be appended upon.
+ * @src: The string to be appended to dest.
+ * @n: The number of bytes from src to be appended to dest.
+ * Return: A pointer to the resulting string dest.
  */
 char *_strncat(char *dest, char *src, int n)
 {
