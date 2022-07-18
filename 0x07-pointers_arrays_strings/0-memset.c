@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _memset - check the code for Holberton School students.
+ * _memset - Fills the first n bytes of the memory area
+ *          pointed to by @s with the constant byte @c.
  * @s: parameter for the array
  * @b: parameter for the values in the array
  * @n: parameter for the number of times to print the new values
