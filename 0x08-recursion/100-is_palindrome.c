@@ -1,189 +1,42 @@
-#include "holberton.h"
-
-
-
-int strlen_no_wilds(char *str);
-
-void iterate_wild(char **wildstr);
-
-char *postfix_match(char *str, char *postfix);
-
-int wildcmp(char *s1, char *s2);
-
-
-
+#include "main.h"
 /**
- *
- *  * strlen_no_wilds - Returns the length of a string,
- *
- *   *                   ignoring wildcard characters.
- *
- *    * @str: The string to be measured.
- *
- *     *
- *
- *      * Return: The length.
- *
- *       */
-
-int strlen_no_wilds(char *str)
-
+ *  _strlen_recursion - find length of string, recursively
+ * @s: pointer to beginning of string
+ * Return: int representing string length
+ */
+int _strlen_recursion(char *s)
 {
-
-		int len = 0, index = 0;
-
-
-
-			if (*(str + index))
-
-					{
-
-								if (*str != '*')
-
-												len++;
-
-
-
-										index++;
-
-												len += strlen_no_wilds(str + index);
-
-													}
-
-
-
-				return (len);
-
+	if (*s)
+		return (_strlen_recursion(s + 1) + 1);
+	return (0);
 }
-
-
-
 /**
- *
- *  * iterate_wild - Iterates through a string located at a wildcard
- *
- *   *                until it points to a non-wildcard character.
- *
- *    * @wildstr: The string to be iterated through.
- *
- *     */
-
-void iterate_wild(char **wildstr)
-
+ * pal_check - recursively checks for palindrome
+ * @a: for the start of string
+ * @length: length of string
+ * Return: 1 if pal, 0 otherwise
+ */
+int pal_check(char *a, int length)
 {
-
-		if (**wildstr == '*')
-
-				{
-
-							(*wildstr)++;
-
-									iterate_wild(wildstr);
-
-										}
-
+	if (length <= 1)
+		return (1);
+	else if (a[0] != a[length - 1])
+		return (0);
+	else
+		return (pal_check((a + 1), (length - 2)));
 }
-
-
-
 /**
- *
- *  * postfix_match - Checks if a string str matches the postfix of
- *
- *   *                 another string potentially containing wildcards.
- *
- *    * @str: The string to be matched.
- *
- *     * @postfix: The postfix.
- *
- *      *
- *
- *       * Return: If str and postfix are identical - a pointer to the null byte
- *
- *        *                                            located at the end of postfix.
- *
- *         *         Otherwise - a pointer to the first unmatched character in postfix.
- *
- *          */
+ * is_palindrome - recursively checks for palindrome
+ * @s: pointer to beginning of string, potential palindrome
+ * Return: 1 if pal, 0 otherwise
+ */
 
-char *postfix_match(char *str, char *postfix)
-
+int is_palindrome(char *s)
 {
+	int len;
 
-		int str_len = strlen_no_wilds(str) - 1;
-
-			int postfix_len = strlen_no_wilds(postfix) - 1;
-
-
-
-				if (*postfix == '*')
-
-							iterate_wild(&postfix);
-
-
-
-					if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
-
-							{
-
-										postfix++;
-
-												return (postfix_match(str, postfix));
-
-													}
-
-
-
-						return (postfix);
-
-}
-
-
-
-/**
- *
- *  * wildcmp - Compares two strings, considering wildcard characters.
- *
- *   * @s1: The first string to be compared.
- *
- *    * @s2: The second string to be compared - may contain wildcards.
- *
- *     *
- *
- *      * Return: If the strings can be considered identical - 1.
- *
- *       *         Otherwise - 0.
- *
- *        */
-
-int wildcmp(char *s1, char *s2)
-
-{
-
-		if (*s2 == '*')
-
-				{
-
-							iterate_wild(&s2);
-
-									s2 = postfix_match(s1, s2);
-
-										}
-
-
-
-			if (*s2 == '\0')
-
-						return (1);
-
-
-
-				if (*s1 != *s2)
-
-							return (0);
-
-
-
-					return (wildcmp(++s1, ++s2));
-
+	len = _strlen_recursion(s);
+	if (len <= 1)
+		return (1);
+	return (pal_check(s, len));
 }
