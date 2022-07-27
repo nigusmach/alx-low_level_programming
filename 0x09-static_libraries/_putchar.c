@@ -3,7 +3,7 @@ int _putchar(char c)
 {
   char ch = c;
 
-  putchar(ch);  
+ _putchar(ch);  
   return (0);
 }
 
