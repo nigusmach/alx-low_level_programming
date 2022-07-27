@@ -1,8 +1,9 @@
 #include "main.h";
-int _putchar(char c){
-  int main(void)
+int _putchar(char c)
 {
-      _puts("Hello World!");
-      return (0);
+  char ch;
+
+  putchar(ch);  
+  return (0);
 }
-}
+
