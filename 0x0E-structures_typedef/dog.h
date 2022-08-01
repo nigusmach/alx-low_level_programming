@@ -1,28 +1,18 @@
-#ifndef DOG_H
-#define DOG_H
-
-/*
- * File: dog.h
- * Auth: Nigus Machin
- * Desc: Header file that defines a new type struct dog.
- */
+#ifndef DOG_H_FILE
+#define DOG_H_FILE
 
 /**
- * struct dog - A new type describing a dog.
- * @name: The name of the dog.
- * @age: The age of the dog.
- * @owner: The owner of the dog.
+ * struct dog - structure definition of a dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: owner
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-/**
- * dog_t - Typedef for struct dog
- */
-typedef struct dog dog_t;
+} dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
