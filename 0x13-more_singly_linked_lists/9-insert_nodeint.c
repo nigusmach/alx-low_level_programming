@@ -1,8 +1,14 @@
+/*
+ * File: 9-insert_nodeint.c
+ * Auth: Nigus Machin
+ */
+
 #include "lists.h"
 
 
 
 /**
+<<<<<<< HEAD
  *
  *  * insert_nodeint_at_index - Inserts a new node to a listint_t
  *
@@ -26,6 +32,19 @@
  *
  *            */
 
+=======
+ * insert_nodeint_at_index - Inserts a new node to a listint_t
+ *                           list at a given position.
+ * @head: A pointer to the address of the
+ *        head of the listint_t list.
+ * @idx: The index of the listint_t list where the new
+ *       node should be added - indices start at 0.
+ * @n: The integer for the new node to contain.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - the address of the new node.
+ */
+>>>>>>> 723df09218cc01f7b9decee8350b37db91d25b36
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 {
