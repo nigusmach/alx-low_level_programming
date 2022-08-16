@@ -1,3 +1,8 @@
+/*
+ * File: 9-insert_nodeint.c
+ * Auth: Nigus Machin
+ */
+
 #include "lists.h"
 
 /**
