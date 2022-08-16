@@ -1,43 +1,22 @@
 #include "lists.h"
 
-#include <stdio.h>
-
-
-
 /**
+ * sum_listint - Calculates the sum of all the
+ *               data (n) of a listint_t list.
+ * @head: A pointer to the head of the listint_t list.
  *
- *  * print_listint - Prints all the elements of a listint_t list.
- *
- *   * @h: A pointer to the head of the list_t list.
- *
- *    *
- *
- *     * Return: The number of nodes in the list_t list.
- *
- *      */
-
-size_t print_listint(const listint_t *h)
-
+ * Return: If the list is empty - 0.
+ *         Otherwise - the sum of all the data.
+ */
+int sum_listint(listint_t *head)
 {
+	int sum = 0;
 
-		size_t nodes = 0;
+	while (head)
+	{
+		sum += head->n;
+		head = head->next;
+	}
 
-
-
-			while (h)
-
-					{
-
-								nodes++;
-
-										printf("%d\n", h->n);
-
-												h = h->next;
-
-													}
-
-
-
-				return (nodes);
-
+	return (sum);
 }
