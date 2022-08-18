@@ -1,83 +1,20 @@
-#include "lists.h"
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
-#include <stdlib.h>
+/*
+ * File: holberton.h
+ * AUth: Brennan D Baraban
+ * Desc: Header file containing prototypes for all functions
+ *       written in the 0x13-bit_manipulation directory.
+ */
 
+int _putchar(char c);
+unsigned int binary_to_uint(const char *b);
+void print_binary(unsigned long int n);
+int get_bit(unsigned long int n, unsigned int index);
+int set_bit(unsigned long int *n, unsigned int index);
+int clear_bit(unsigned long int *n, unsigned int index);
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+int get_endianness(void);
 
-
-/**
- *
- *  * insert_nodeint_at_index -  inserts a new node at a given position.
- *
- *   * @head: double pointer to the first node in the list
- *
- *    * @idx: index of the node to insert
- *
- *     * @n: value for new node
- *
- *      *
- *
- *       * Return: pointer to the indexed node
- *
- *        */
-
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
-
-{
-
-		unsigned int i;
-
-			listint_t *current, *new;
-
-
-
-				if (head == NULL)
-
-							return (NULL);
-
-					if (idx != 0)
-
-							{
-
-										current = *head;
-
-												for (i = 0; i < idx - 1 && current != NULL; i++)
-
-															{
-
-																			current = current->next;
-
-																					}
-
-														if (current == NULL)
-
-																		return (NULL);
-
-															}
-
-						new = malloc(sizeof(listint_t));
-
-							if (new == NULL)
-
-										return (NULL);
-
-								new->n = n;
-
-									if (idx == 0)
-
-											{
-
-														new->next = *head;
-
-																*head = new;
-
-																		return (new);
-
-																			}
-
-										new->next = current->next;
-
-											current->next = new;
-
-												return (new);
-
-}
+#endif /* HOLBERTON_H */
