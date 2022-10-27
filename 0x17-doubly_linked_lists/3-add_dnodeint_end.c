@@ -1,6 +1,5 @@
 /*
  * File: 3-add_dnodeint_end.c
- * Auth: Nigus Machin
  */
 
 #include "lists.h"
