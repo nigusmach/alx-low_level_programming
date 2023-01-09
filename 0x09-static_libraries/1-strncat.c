@@ -1,30 +1,33 @@
-/*
- * File: 1-strncat.c
- * Auth: Nigus Machin
- */
-
 #include "main.h"
 
 /**
- * _strncat - Concatenates two strings using at most
- *            an inputted number of bytes from src.
- * @dest: The string to be appended upon.
- * @src: The string to be appended to dest.
- * @n: The number of bytes from src to be appended to dest.
- * Return: A pointer to the resulting string dest.
+ * _strncat - two words
+ * @dest : pointer to char param
+ * @src : pointer to char param
+ * @n : int parameter
+ * Return: *dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0;
-	int j = 0;
+	int m;
+	int i;
 
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0' && j < n)
+	m = 0;
+
+	for (i = 0; i < 1000; i++)
 	{
-		dest[i] = src[j];
-		j++;
-		i++;
+		if (dest[i] == '\0')
+		{
+			break;
+		}
+		m++;
 	}
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
+	{
+		dest[m + i] = src[i];
+	}
+	dest[m + i] = '\0';
 	return (dest);
 }
