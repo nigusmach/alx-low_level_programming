@@ -1,12 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
-/*
- * File: main.h
- * Auth: Nigus Machin
- * Desc: Header file containing the prototypes of all functions
- *       included in the static library libmy.a .
- */
+/*copy list from task*/
 
 int _putchar(char c);
 int _islower(int c);
@@ -16,7 +11,6 @@ int _isupper(int c);
 int _isdigit(int c);
 int _strlen(char *s);
 void _puts(char *s);
-void _puts(char *str);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 char *_strcat(char *dest, char *src);
